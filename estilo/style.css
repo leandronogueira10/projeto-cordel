@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+:root{
+    --font1: Verdana, Geneva, tahoma, sans-serif;
+    --font2: 'Patrick Hand', cursiva;
+    --font3: 'Satisfy', cursiva;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--font1);
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    
+}
+
+header > h1 {
+    padding-top:  50px;
+    font-variant: small-caps;
+    font-family: var(--font2);
+    font-size: 5vw;
+ 
+}
+header > p {
+    padding-bottom: 50px;
+}
+
+a {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline coral;
+}
+
+section {
+    
+    font-family: var(--font3);
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 2.8vw;
+}
+
+section.normal{
+    background-color: white;
+}
+
+section#img01{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    background-size: cover;
+    
+}
+
+section#img02{
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+
+section.normal > p{
+    padding: 10px;
+    padding-bottom: 2em;
+}
+
+section.imagem {
+    background-color: rgb(31, 29, 29);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.486);
+    background-attachment: fixed;
+    
+}
+
+section.imagem > p {
+    display: inline-block;
+    padding: 10px;
+    background-color: rgba(41, 37, 37, 0.384);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.945);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
